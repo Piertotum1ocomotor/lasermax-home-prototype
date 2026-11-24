@@ -45,8 +45,8 @@ function selectCity(city) {
   }
   for (const item of studios) {
     item.classList.toggle("is-selected", item === studio);
-    studioGrid.append(item);
   }
+  studioGrid.setAttribute("data-city-enhanced", "");
   studioGrid.prepend(studio);
   rememberCity(city);
   return studio;

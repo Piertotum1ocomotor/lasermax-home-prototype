@@ -4,7 +4,20 @@
 
 Страница работает на HTML, CSS и JavaScript без сборки. Для локального просмотра из корня репозитория запустите `python3 -m http.server 8000`. GitHub Pages публикует содержимое корня ветки `main`.
 
-## Исследование
+## Визуальное исследование
+
+Сравнили первые экраны на 390 и 1440 px, соседство промо, цен и адресов, фотографии и читаемость каталога. На действующей главной LaserMax заметны графит, песочные элементы, красный акцент и список городов рядом с первым экраном. В первом прототипе засечки, сиреневые капсулы и сгенерированный портрет отодвинули прайс ниже мобильного экрана. [Действующий LaserMax](https://epilyaziya.ru/), [первая версия прототипа](https://github.com/Piertotum1ocomotor/lasermax-home-prototype/tree/9285f7300d9b52f621fdf0e9c60f7841d79c99c1).
+
+| Что видно в источнике | Что появилось у LaserMax |
+| --- | --- |
+| Laser Clinics UK держит поиск клиники отдельным входом в мобильной шапке. У «Подружек» на десктопе количество адресов находится рядом с телефоном. [Laser Clinics UK](https://laserclinics.co.uk/), [«Подружки»](https://podruge.ru/). | Город, телефон и адреса доступны из шапки. Первый экран строится вокруг единого указателя восьми городов с переходом к конкретной студии. |
+| Milan Laser включает в кадр оборудование. «Гладкое тело» делает крупный предметный кадр установки. [Milan Laser](https://milanlaser.com/), [«Гладкое тело»](https://gladkoetelo.ru/). | В блоке о первом визите показаны аппарат и вывеска в студии LaserMax в Костроме. Под кадром указан филиал. |
+| Laser Me Out использует плотный гротеск, контраст и узнаваемый предмет. У LaserLux цены даны в открытой таблице за сеанс. [Wagemut](https://www.wagemut.studio/en/projects/lmo), [DAZU Studio](https://studio.divireva.com/projekte/laserlux-jena/). | Городской указатель и открытое сравнение цен занимают разные полосы страницы. Цвета и знак взяты из действующей айдентики LaserMax. |
+| В кейсе Muse Laser Spa описаны тёплый нейтральный фон, засечки и свободная редакционная композиция. [Кейс Muse Laser Spa](https://contra.com/p/bFrBsXO3-muse-laser-spa-beauty-clinic-website-and-branding). | Пример помог увидеть, почему первая версия воспринималась как типовой beauty-сайт. Новый характер задают графит, красное действие, плотный набор и реальные детали студии. |
+
+Палитра из оригинального CSS сети — тёмный `#19181D`, песочный `#CA9F7C`, красный `#DA393E` и акцентный `#F0473C`. На телефоне восемь городов собраны в две колонки. За указателем начинается светлая полоса с таблицей, в первом экране также видна стартовая цена за сеанс. [Оригинальные стили](https://epilyaziya.ru/wp-content/themes/seo-epi_1668073866/css/main.css?ver=1703419834).
+
+## Исследование сценариев записи
 
 ### Действующий сайт
 
@@ -33,11 +46,4 @@
 
 ## Изображения
 
-Редакционный портрет на первом экране создан встроенным ImageGen для этого прототипа. Фото кабинета взято из галереи на официальной странице студии в Иванове. [Контакты и галерея студии](https://epilyaziya.ru/ivanovo/contacts/).
-
-<details>
-<summary>Промпт портрета</summary>
-
-Use case: photorealistic-natural. Website hero editorial photograph for LaserMax, a Russian laser hair removal studio chain homepage. Single adult woman approx 29 with dark warm-brown hair in a relaxed low bun, natural warm skin texture, lightly smiling with eyes softly looking left of camera, in plain ivory wide-strap tank top, seated in sunlit sophisticated cream beauty studio. Medium close portrait from head through mid torso, forearm naturally resting across own upper body in a relaxed modest pose. Sophisticated premium skincare campaign, warm ivory walls, a subtle muted blush-lavender accent light and a gentle broad shadow from a window, muted warm grounds. Vertical 4:5 composition, subject centered a little to the right, breathing room above and around for cropping, but no blank text column. Large commercial softbox quality shot on 50mm lens, natural perspective, calming confident mood. Realistic, contemporary, accessible, elegant. No devices, no clinical claims, no logos, no text, no watermark, no retouching beyond natural color grade.
-
-</details>
+Использованы знак LaserMax с действующей главной и фото лазерного аппарата с вывеской из галереи костромской студии. [Главная сети](https://epilyaziya.ru/), [галерея Костромы](https://epilyaziya.ru/kostroma/#centre).
