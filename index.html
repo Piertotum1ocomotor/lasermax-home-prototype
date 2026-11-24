@@ -9,8 +9,8 @@
   <title>LaserMax — лазерная эпиляция в 8 городах</title>
   <link rel="icon" href="./assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="./fonts.css?v=3e7350d9">
-  <link rel="stylesheet" href="./styles.css?v=b2de2657">
-  <script src="./script.js?v=b58c13df" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=70c81551">
+  <script src="./script.js?v=d7130074" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">К основному содержанию</a>
@@ -34,180 +34,190 @@
         </ul>
       </details>
       <nav class="main-nav" aria-label="Навигация по странице">
-        <a href="#epilation">Лазерная эпиляция</a>
+        <a href="#epilation"><span class="nav-services-full">Лазерная эпиляция</span><span class="nav-services-short">Услуги</span></a>
         <a href="#prices">Цены</a>
         <a href="#studios">Адреса</a>
       </nav>
       <a class="header-phone" href="tel:+78002227949">8 800 222‑79‑49</a>
-      <a class="button header-book" data-book-jump href="#choose-city">Записаться <span aria-hidden="true">↓</span></a>
     </div>
   </header>
   <main id="main" tabindex="-1">
     <section class="hero" id="epilation" aria-labelledby="hero-title">
       <div class="shell hero-layout">
         <div class="hero-copy">
-          <h1 id="hero-title">Лазерная эпиляция</h1>
-          <p id="choose-city" tabindex="-1">Выберите студию в одном из 8 городов</p>
+          <p class="hero-network">Студии LaserMax в 8 городах</p>
+          <h1 id="hero-title"><span>Лазерная</span> <span>эпиляция</span></h1>
+          <p class="hero-offer">Подмышки · первый сеанс <strong>665 ₽</strong></p>
+          <div class="hero-actions">
+            <a class="button hero-book" href="#choose-city">Выбрать студию <span aria-hidden="true">↓</span></a>
+            <a class="text-link hero-prices" href="#prices">Все цены</a>
+          </div>
         </div>
-        <ul class="city-index" aria-label="Города">
-          <li><a data-city-choice href="#arhangelsk">Архангельск <span aria-hidden="true">↘</span></a></li>
-          <li><a data-city-choice href="#vologda">Вологда <span aria-hidden="true">↘</span></a></li>
-          <li><a data-city-choice href="#ivanovo">Иваново <span aria-hidden="true">↘</span></a></li>
-          <li><a data-city-choice href="#kostroma">Кострома <span aria-hidden="true">↘</span></a></li>
-          <li><a data-city-choice href="#petrozavodsk">Петрозаводск <span aria-hidden="true">↘</span></a></li>
-          <li><a data-city-choice href="#rybinsk">Рыбинск <span aria-hidden="true">↘</span></a></li>
-          <li><a data-city-choice href="#cherepovets">Череповец <span aria-hidden="true">↘</span></a></li>
-          <li><a data-city-choice href="#yaroslavl">Ярославль <span aria-hidden="true">↘</span></a></li>
-        </ul>
-        <div class="hero-offer">
-          <p>Первый сеанс <strong>от 490 ₽</strong></p>
+        <figure class="hero-portrait">
+          <div class="hero-portrait-crop">
+            <img src="./assets/device.jpg" width="500" height="621" alt="Женщина с манипулой для лазерной эпиляции" fetchpriority="high">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="pricing" id="prices" aria-labelledby="pricing-title">
+      <div class="shell pricing-layout">
+        <div class="pricing-intro">
+          <h2 id="pricing-title">Цены за сеанс</h2>
           <p><strong>−50%</strong> на первую процедуру</p>
         </div>
-      </div>
-    </section>
-
-    <section class="pricing shell" id="prices" aria-labelledby="pricing-title">
-      <div class="pricing-title">
-        <h2 id="pricing-title">Цены за сеанс</h2>
-        <a class="text-link" data-full-price href="#choose-city"><span>Полный прайс по городу</span> <span aria-hidden="true">↗</span></a>
-      </div>
-      <table class="price-table" aria-label="Популярные зоны и комплекс">
-        <colgroup><col><col class="price-column"><col class="price-column"></colgroup>
-        <thead>
-          <tr><th scope="col">Зона / комплекс</th><th scope="col">Первый сеанс</th><th scope="col">Обычная цена</th></tr>
-        </thead>
-        <tbody>
-          <tr><th scope="row">Верхняя губа</th><td>490 ₽</td><td>980 ₽</td></tr>
-          <tr><th scope="row">Подмышечные впадины</th><td>665 ₽</td><td>1 330 ₽</td></tr>
-          <tr><th scope="row">Глубокое бикини</th><td>1 470 ₽</td><td>2 940 ₽</td></tr>
-          <tr><th scope="row">Подмышки + бикини</th><td>1 985 ₽</td><td>3 970 ₽</td></tr>
-        </tbody>
-      </table>
-      <details class="more-prices">
-        <summary>Другие зоны и комплексы</summary>
-        <table class="price-table" aria-label="Другие зоны и комплексы">
-          <colgroup><col><col class="price-column"><col class="price-column"></colgroup>
-          <thead>
-            <tr><th scope="col">Зона / комплекс</th><th scope="col">Первый сеанс</th><th scope="col">Обычная цена</th></tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">Голени</th><td>1 840 ₽</td><td>3 680 ₽</td></tr>
-            <tr><th scope="row">Подмышки + бикини + голени</th><td>3 440 ₽</td><td>6 880 ₽</td></tr>
-            <tr><th scope="row">Подмышки + бикини + голени + бёдра</th><td>4 775 ₽</td><td>9 550 ₽</td></tr>
-          </tbody>
-        </table>
-      </details>
-      <p class="pricing-note">Условия скидки и итоговую цену уточнит администратор.</p>
-    </section>
-
-    <section class="studios section shell" id="studios" aria-labelledby="studios-title">
-      <div class="section-head studios-head">
-        <div>
-          <h2 id="studios-title">Адреса студий</h2>
+        <div class="pricing-data">
+          <table class="price-table" aria-label="Популярные зоны и комплекс">
+            <colgroup><col><col class="price-column"><col class="price-column"></colgroup>
+            <thead>
+              <tr><th scope="col">Зона / комплекс</th><th scope="col">Первый сеанс</th><th scope="col">Обычная цена</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Верхняя губа</th><td>490 ₽</td><td>980 ₽</td></tr>
+              <tr><th scope="row">Подмышечные впадины</th><td>665 ₽</td><td>1 330 ₽</td></tr>
+              <tr><th scope="row">Глубокое бикини</th><td>1 470 ₽</td><td>2 940 ₽</td></tr>
+              <tr><th scope="row">Подмышки + бикини</th><td>1 985 ₽</td><td>3 970 ₽</td></tr>
+            </tbody>
+          </table>
+          <details class="more-prices">
+            <summary>Другие зоны и комплексы</summary>
+            <table class="price-table" aria-label="Другие зоны и комплексы">
+              <colgroup><col><col class="price-column"><col class="price-column"></colgroup>
+              <thead>
+                <tr><th scope="col">Зона / комплекс</th><th scope="col">Первый сеанс</th><th scope="col">Обычная цена</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Голени</th><td>1 840 ₽</td><td>3 680 ₽</td></tr>
+                <tr><th scope="row">Подмышки + бикини + голени</th><td>3 440 ₽</td><td>6 880 ₽</td></tr>
+                <tr><th scope="row">Подмышки + бикини + голени + бёдра</th><td>4 775 ₽</td><td>9 550 ₽</td></tr>
+              </tbody>
+            </table>
+          </details>
+          <p class="pricing-note">Условия скидки и итоговую цену уточнит администратор.</p>
+          <a class="text-link" data-full-price href="#choose-city"><span>Полный прайс по городу</span> <span aria-hidden="true">↗</span></a>
         </div>
-        <p>Оставьте заявку в вашей студии. Администратор перезвонит и согласует время.</p>
       </div>
-      <div class="studio-grid" data-studio-grid>
-        <article class="studio-card" id="arhangelsk" aria-labelledby="title-arhangelsk" tabindex="-1" data-studio>
-          <h3 id="title-arhangelsk">Архангельск</h3>
-          <p class="studio-address">ул. Воскресенская, 16, помещение 28Н</p>
-          <p class="studio-hours">Ежедневно, 09:00–21:00</p>
-          <ul class="studio-links" aria-label="Информация о студии">
-            <li><a href="https://yandex.ru/maps/?text=%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%2C+%D0%92%D0%BE%D1%81%D0%BA%D1%80%D0%B5%D1%81%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C+16">На карте <span aria-hidden="true">↗</span></a></li>
-            <li><a href="https://epilyaziya.ru/arhangelsk/contacts/">Контакты</a></li>
-            <li><a data-studio-price href="https://epilyaziya.ru/arhangelsk/#price">Прайс</a></li>
-          </ul>
-          <a class="button studio-book" href="https://epilyaziya.ru/arhangelsk/#online-zapisi" aria-describedby="arhangelsk-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
-          <p class="booking-note" id="arhangelsk-booking">Форма на сайте студии. Вам перезвонят.</p>
-        </article>
-        <article class="studio-card" id="vologda" aria-labelledby="title-vologda" tabindex="-1" data-studio>
-          <h3 id="title-vologda">Вологда</h3>
-          <p class="studio-address">ул. Сергея Орлова, 4, офис 106</p>
-          <p class="studio-hours">Ежедневно, 09:00–21:00</p>
-          <ul class="studio-links" aria-label="Информация о студии">
-            <li><a href="https://yandex.ru/maps/?text=%D0%92%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D1%8F+%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D0%B0%2C+4">На карте <span aria-hidden="true">↗</span></a></li>
-            <li><a href="https://epilyaziya.ru/vologda/contacts/">Контакты</a></li>
-            <li><a data-studio-price href="https://epilyaziya.ru/vologda/#price">Прайс</a></li>
-          </ul>
-          <a class="button studio-book" href="https://epilyaziya.ru/vologda/#online-zapisi" aria-describedby="vologda-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
-          <p class="booking-note" id="vologda-booking">Форма на сайте студии. Вам перезвонят.</p>
-        </article>
-        <article class="studio-card" id="ivanovo" aria-labelledby="title-ivanovo" tabindex="-1" data-studio>
-          <h3 id="title-ivanovo">Иваново</h3>
-          <p class="studio-address">ул. Жарова, 3, Григ-центр, 2-й этаж</p>
-          <p class="studio-hours">Ежедневно, 09:00–21:00</p>
-          <ul class="studio-links" aria-label="Информация о студии">
-            <li><a href="https://yandex.ru/maps/?text=%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%96%D0%B0%D1%80%D0%BE%D0%B2%D0%B0%2C+3">На карте <span aria-hidden="true">↗</span></a></li>
-            <li><a href="https://epilyaziya.ru/ivanovo/contacts/">Контакты</a></li>
-            <li><a data-studio-price href="https://epilyaziya.ru/ivanovo/#price">Прайс</a></li>
-          </ul>
-          <a class="button studio-book" href="https://epilyaziya.ru/ivanovo/#online-zapisi" aria-describedby="ivanovo-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
-          <p class="booking-note" id="ivanovo-booking">Форма на сайте студии. Вам перезвонят.</p>
-        </article>
-        <article class="studio-card" id="kostroma" aria-labelledby="title-kostroma" tabindex="-1" data-studio>
-          <h3 id="title-kostroma">Кострома</h3>
-          <p class="studio-address">ул. Советская, 21А, корп. 1, 1-й этаж, кабинет 102</p>
-          <p class="studio-hours">Ежедневно, 09:00–21:00</p>
-          <ul class="studio-links" aria-label="Информация о студии">
-            <li><a href="https://yandex.ru/maps/?text=%D0%9A%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%BC%D0%B0%2C+%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C+21%D0%90%2C+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81+1">На карте <span aria-hidden="true">↗</span></a></li>
-            <li><a href="https://epilyaziya.ru/kostroma/contacts/">Контакты</a></li>
-            <li><a data-studio-price href="https://epilyaziya.ru/kostroma/#price">Прайс</a></li>
-          </ul>
-          <a class="button studio-book" href="https://epilyaziya.ru/kostroma/#online-zapisi" aria-describedby="kostroma-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
-          <p class="booking-note" id="kostroma-booking">Форма на сайте студии. Вам перезвонят.</p>
-        </article>
-        <article class="studio-card" id="petrozavodsk" aria-labelledby="title-petrozavodsk" tabindex="-1" data-studio>
-          <h3 id="title-petrozavodsk">Петрозаводск</h3>
-          <p class="studio-address">ул. Федосовой, 31</p>
-          <p class="studio-hours">Ежедневно, 09:00–21:00</p>
-          <ul class="studio-links" aria-label="Информация о студии">
-            <li><a href="https://yandex.ru/maps/?text=%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D0%BA%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%A4%D0%B5%D0%B4%D0%BE%D1%81%D0%BE%D0%B2%D0%BE%D0%B9%2C+31">На карте <span aria-hidden="true">↗</span></a></li>
-            <li><a href="https://epilyaziya.ru/petrozavodsk/contacts/">Контакты</a></li>
-            <li><a data-studio-price href="https://epilyaziya.ru/petrozavodsk/#price">Прайс</a></li>
-          </ul>
-          <a class="button studio-book" href="https://epilyaziya.ru/petrozavodsk/#online-zapisi" aria-describedby="petrozavodsk-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
-          <p class="booking-note" id="petrozavodsk-booking">Форма на сайте студии. Вам перезвонят.</p>
-        </article>
-        <article class="studio-card" id="rybinsk" aria-labelledby="title-rybinsk" tabindex="-1" data-studio>
-          <h3 id="title-rybinsk">Рыбинск</h3>
-          <p class="studio-address">ул. Чкалова, 64, ТЦ «Атриум», офис 113</p>
-          <p class="studio-hours">Ежедневно, 09:00–21:00</p>
-          <ul class="studio-links" aria-label="Информация о студии">
-            <li><a href="https://yandex.ru/maps/?text=%D0%A0%D1%8B%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%A7%D0%BA%D0%B0%D0%BB%D0%BE%D0%B2%D0%B0%2C+64">На карте <span aria-hidden="true">↗</span></a></li>
-            <li><a href="https://epilyaziya.ru/rybinsk/contacts/">Контакты</a></li>
-            <li><a data-studio-price href="https://epilyaziya.ru/rybinsk/#price">Прайс</a></li>
-          </ul>
-          <a class="button studio-book" href="https://epilyaziya.ru/rybinsk/#online-zapisi" aria-describedby="rybinsk-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
-          <p class="booking-note" id="rybinsk-booking">Форма на сайте студии. Вам перезвонят.</p>
-        </article>
-        <article class="studio-card" id="cherepovets" aria-labelledby="title-cherepovets" tabindex="-1" data-studio>
-          <h3 id="title-cherepovets">Череповец</h3>
-          <p class="studio-address">Октябрьский проспект, 72А, вход со двора</p>
-          <p class="studio-hours">Ежедневно, 09:00–21:00</p>
-          <ul class="studio-links" aria-label="Информация о студии">
-            <li><a href="https://yandex.ru/maps/?text=%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%BE%D0%B2%D0%B5%D1%86%2C+%D0%9E%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C+72%D0%90">На карте <span aria-hidden="true">↗</span></a></li>
-            <li><a href="https://epilyaziya.ru/cherepovets/contacts/">Контакты</a></li>
-            <li><a data-studio-price href="https://epilyaziya.ru/cherepovets/#price">Прайс</a></li>
-          </ul>
-          <a class="button studio-book" href="https://epilyaziya.ru/cherepovets/#online-zapisi" aria-describedby="cherepovets-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
-          <p class="booking-note" id="cherepovets-booking">Форма на сайте студии. Вам перезвонят.</p>
-        </article>
-        <article class="studio-card" id="yaroslavl" aria-labelledby="title-yaroslavl" tabindex="-1" data-studio>
-          <h3 id="title-yaroslavl">Ярославль</h3>
-          <p class="studio-address">ул. Собинова, 54, кабинет 24, домофон 4, вход под вывеской reef</p>
-          <p class="studio-hours">Ежедневно, 09:00–21:00</p>
-          <ul class="studio-links" aria-label="Информация о студии">
-            <li><a href="https://yandex.ru/maps/?text=%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8C%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%A1%D0%BE%D0%B1%D0%B8%D0%BD%D0%BE%D0%B2%D0%B0%2C+54">На карте <span aria-hidden="true">↗</span></a></li>
-            <li><a href="https://epilyaziya.ru/yaroslavl/contacts/">Контакты</a></li>
-            <li><a data-studio-price href="https://epilyaziya.ru/yaroslavl/#price">Прайс</a></li>
-          </ul>
-          <a class="button studio-book" href="https://epilyaziya.ru/yaroslavl/#online-zapisi" aria-describedby="yaroslavl-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
-          <p class="booking-note" id="yaroslavl-booking">Форма на сайте студии. Вам перезвонят.</p>
-        </article>
-      </div>
-      <div class="studios-footer">
-        <p class="studios-phone">Можно записаться по телефону <a href="tel:+78002227949">8 800 222‑79‑49</a></p>
-        <a class="text-link" href="#choose-city">К списку городов <span aria-hidden="true">↑</span></a>
+    </section>
+
+    <section class="studios section" id="studios" aria-labelledby="studios-title">
+      <div class="shell">
+        <div class="section-head studios-head">
+          <h2 id="studios-title">Студии LaserMax</h2>
+          <p id="choose-city" tabindex="-1">Выберите город, чтобы посмотреть адрес и записаться.</p>
+        </div>
+        <ul class="city-index" aria-label="Города">
+          <li><a data-city-choice href="#arhangelsk">Архангельск</a></li>
+          <li><a data-city-choice href="#vologda">Вологда</a></li>
+          <li><a data-city-choice href="#ivanovo">Иваново</a></li>
+          <li><a data-city-choice href="#kostroma">Кострома</a></li>
+          <li><a data-city-choice href="#petrozavodsk">Петрозаводск</a></li>
+          <li><a data-city-choice href="#rybinsk">Рыбинск</a></li>
+          <li><a data-city-choice href="#cherepovets">Череповец</a></li>
+          <li><a data-city-choice href="#yaroslavl">Ярославль</a></li>
+        </ul>
+        <div class="studio-grid" data-studio-grid>
+          <article class="studio-card" id="arhangelsk" aria-labelledby="title-arhangelsk" tabindex="-1" data-studio>
+            <h3 id="title-arhangelsk">Архангельск</h3>
+            <p class="studio-address">ул. Воскресенская, 16, помещение 28Н</p>
+            <p class="studio-hours">Ежедневно, 09:00–21:00</p>
+            <ul class="studio-links" aria-label="Информация о студии">
+              <li><a href="https://yandex.ru/maps/?text=%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%2C+%D0%92%D0%BE%D1%81%D0%BA%D1%80%D0%B5%D1%81%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C+16">На карте <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://epilyaziya.ru/arhangelsk/contacts/">Контакты</a></li>
+              <li><a data-studio-price href="https://epilyaziya.ru/arhangelsk/#price">Прайс</a></li>
+            </ul>
+            <a class="button studio-book" href="https://epilyaziya.ru/arhangelsk/#online-zapisi" aria-describedby="arhangelsk-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
+            <p class="booking-note" id="arhangelsk-booking">Форма на сайте студии. Вам перезвонят.</p>
+          </article>
+          <article class="studio-card" id="vologda" aria-labelledby="title-vologda" tabindex="-1" data-studio>
+            <h3 id="title-vologda">Вологда</h3>
+            <p class="studio-address">ул. Сергея Орлова, 4, офис 106</p>
+            <p class="studio-hours">Ежедневно, 09:00–21:00</p>
+            <ul class="studio-links" aria-label="Информация о студии">
+              <li><a href="https://yandex.ru/maps/?text=%D0%92%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D1%8F+%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D0%B0%2C+4">На карте <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://epilyaziya.ru/vologda/contacts/">Контакты</a></li>
+              <li><a data-studio-price href="https://epilyaziya.ru/vologda/#price">Прайс</a></li>
+            </ul>
+            <a class="button studio-book" href="https://epilyaziya.ru/vologda/#online-zapisi" aria-describedby="vologda-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
+            <p class="booking-note" id="vologda-booking">Форма на сайте студии. Вам перезвонят.</p>
+          </article>
+          <article class="studio-card" id="ivanovo" aria-labelledby="title-ivanovo" tabindex="-1" data-studio>
+            <h3 id="title-ivanovo">Иваново</h3>
+            <p class="studio-address">ул. Жарова, 3, Григ-центр, 2-й этаж</p>
+            <p class="studio-hours">Ежедневно, 09:00–21:00</p>
+            <ul class="studio-links" aria-label="Информация о студии">
+              <li><a href="https://yandex.ru/maps/?text=%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%96%D0%B0%D1%80%D0%BE%D0%B2%D0%B0%2C+3">На карте <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://epilyaziya.ru/ivanovo/contacts/">Контакты</a></li>
+              <li><a data-studio-price href="https://epilyaziya.ru/ivanovo/#price">Прайс</a></li>
+            </ul>
+            <a class="button studio-book" href="https://epilyaziya.ru/ivanovo/#online-zapisi" aria-describedby="ivanovo-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
+            <p class="booking-note" id="ivanovo-booking">Форма на сайте студии. Вам перезвонят.</p>
+          </article>
+          <article class="studio-card" id="kostroma" aria-labelledby="title-kostroma" tabindex="-1" data-studio>
+            <h3 id="title-kostroma">Кострома</h3>
+            <p class="studio-address">ул. Советская, 21А, корп. 1, 1-й этаж, кабинет 102</p>
+            <p class="studio-hours">Ежедневно, 09:00–21:00</p>
+            <ul class="studio-links" aria-label="Информация о студии">
+              <li><a href="https://yandex.ru/maps/?text=%D0%9A%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%BC%D0%B0%2C+%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C+21%D0%90%2C+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81+1">На карте <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://epilyaziya.ru/kostroma/contacts/">Контакты</a></li>
+              <li><a data-studio-price href="https://epilyaziya.ru/kostroma/#price">Прайс</a></li>
+            </ul>
+            <a class="button studio-book" href="https://epilyaziya.ru/kostroma/#online-zapisi" aria-describedby="kostroma-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
+            <p class="booking-note" id="kostroma-booking">Форма на сайте студии. Вам перезвонят.</p>
+          </article>
+          <article class="studio-card" id="petrozavodsk" aria-labelledby="title-petrozavodsk" tabindex="-1" data-studio>
+            <h3 id="title-petrozavodsk">Петрозаводск</h3>
+            <p class="studio-address">ул. Федосовой, 31</p>
+            <p class="studio-hours">Ежедневно, 09:00–21:00</p>
+            <ul class="studio-links" aria-label="Информация о студии">
+              <li><a href="https://yandex.ru/maps/?text=%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D0%BA%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%A4%D0%B5%D0%B4%D0%BE%D1%81%D0%BE%D0%B2%D0%BE%D0%B9%2C+31">На карте <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://epilyaziya.ru/petrozavodsk/contacts/">Контакты</a></li>
+              <li><a data-studio-price href="https://epilyaziya.ru/petrozavodsk/#price">Прайс</a></li>
+            </ul>
+            <a class="button studio-book" href="https://epilyaziya.ru/petrozavodsk/#online-zapisi" aria-describedby="petrozavodsk-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
+            <p class="booking-note" id="petrozavodsk-booking">Форма на сайте студии. Вам перезвонят.</p>
+          </article>
+          <article class="studio-card" id="rybinsk" aria-labelledby="title-rybinsk" tabindex="-1" data-studio>
+            <h3 id="title-rybinsk">Рыбинск</h3>
+            <p class="studio-address">ул. Чкалова, 64, ТЦ «Атриум», офис 113</p>
+            <p class="studio-hours">Ежедневно, 09:00–21:00</p>
+            <ul class="studio-links" aria-label="Информация о студии">
+              <li><a href="https://yandex.ru/maps/?text=%D0%A0%D1%8B%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%A7%D0%BA%D0%B0%D0%BB%D0%BE%D0%B2%D0%B0%2C+64">На карте <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://epilyaziya.ru/rybinsk/contacts/">Контакты</a></li>
+              <li><a data-studio-price href="https://epilyaziya.ru/rybinsk/#price">Прайс</a></li>
+            </ul>
+            <a class="button studio-book" href="https://epilyaziya.ru/rybinsk/#online-zapisi" aria-describedby="rybinsk-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
+            <p class="booking-note" id="rybinsk-booking">Форма на сайте студии. Вам перезвонят.</p>
+          </article>
+          <article class="studio-card" id="cherepovets" aria-labelledby="title-cherepovets" tabindex="-1" data-studio>
+            <h3 id="title-cherepovets">Череповец</h3>
+            <p class="studio-address">Октябрьский проспект, 72А, вход со двора</p>
+            <p class="studio-hours">Ежедневно, 09:00–21:00</p>
+            <ul class="studio-links" aria-label="Информация о студии">
+              <li><a href="https://yandex.ru/maps/?text=%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%BE%D0%B2%D0%B5%D1%86%2C+%D0%9E%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C+72%D0%90">На карте <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://epilyaziya.ru/cherepovets/contacts/">Контакты</a></li>
+              <li><a data-studio-price href="https://epilyaziya.ru/cherepovets/#price">Прайс</a></li>
+            </ul>
+            <a class="button studio-book" href="https://epilyaziya.ru/cherepovets/#online-zapisi" aria-describedby="cherepovets-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
+            <p class="booking-note" id="cherepovets-booking">Форма на сайте студии. Вам перезвонят.</p>
+          </article>
+          <article class="studio-card" id="yaroslavl" aria-labelledby="title-yaroslavl" tabindex="-1" data-studio>
+            <h3 id="title-yaroslavl">Ярославль</h3>
+            <p class="studio-address">ул. Собинова, 54, кабинет 24, домофон 4, вход под вывеской reef</p>
+            <p class="studio-hours">Ежедневно, 09:00–21:00</p>
+            <ul class="studio-links" aria-label="Информация о студии">
+              <li><a href="https://yandex.ru/maps/?text=%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8C%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%A1%D0%BE%D0%B1%D0%B8%D0%BD%D0%BE%D0%B2%D0%B0%2C+54">На карте <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://epilyaziya.ru/yaroslavl/contacts/">Контакты</a></li>
+              <li><a data-studio-price href="https://epilyaziya.ru/yaroslavl/#price">Прайс</a></li>
+            </ul>
+            <a class="button studio-book" href="https://epilyaziya.ru/yaroslavl/#online-zapisi" aria-describedby="yaroslavl-booking">Оставить заявку <span aria-hidden="true">↗</span></a>
+            <p class="booking-note" id="yaroslavl-booking">Форма на сайте студии. Вам перезвонят.</p>
+          </article>
+        </div>
+        <div class="studios-footer">
+          <p class="studios-phone">Можно записаться по телефону <a href="tel:+78002227949">8 800 222‑79‑49</a></p>
+          <a class="text-link" href="#choose-city">К списку городов <span aria-hidden="true">↑</span></a>
+        </div>
       </div>
     </section>
 
@@ -272,7 +282,7 @@
           <h2 id="closing-title">Запишитесь на первый визит</h2>
           <p>Выберите студию, чтобы оставить заявку на обратный звонок.</p>
         </div>
-        <a class="button" data-book-jump href="#choose-city">Выбрать студию <span aria-hidden="true">↗</span></a>
+        <a class="button" href="#choose-city">Выбрать студию <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>

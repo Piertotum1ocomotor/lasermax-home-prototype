@@ -2,7 +2,6 @@ const menu = document.querySelector(".city-menu");
 const cityLabel = document.querySelector("[data-current-city]");
 const studioGrid = document.querySelector("[data-studio-grid]");
 const cityLinks = [...document.querySelectorAll("[data-city-choice]")];
-const bookingLinks = [...document.querySelectorAll("[data-book-jump]")];
 const priceLink = document.querySelector("[data-full-price]");
 const priceLabel = priceLink.querySelector("span");
 const studios = [...studioGrid.querySelectorAll("[data-studio]")];
@@ -35,7 +34,6 @@ function selectCity(city) {
   priceLink.href = studio.querySelector("[data-studio-price]").href;
   priceLabel.textContent = "Полный прайс · " + name;
 
-  for (const link of bookingLinks) link.hash = city;
   for (const link of cityLinks) {
     if (link.hash === "#" + city) {
       link.setAttribute("aria-current", "true");
@@ -46,7 +44,6 @@ function selectCity(city) {
   for (const item of studios) {
     item.classList.toggle("is-selected", item === studio);
   }
-  studioGrid.setAttribute("data-city-enhanced", "");
   studioGrid.prepend(studio);
   rememberCity(city);
   return studio;
@@ -82,6 +79,7 @@ document.addEventListener("click", (event) => {
   if (menu.open && !menu.contains(event.target)) menu.open = false;
 });
 
+studioGrid.setAttribute("data-city-enhanced", "");
 selectCityFromHash();
 if (!selectedCity) selectCity(getStoredCity());
 window.addEventListener("hashchange", selectCityFromHash);
