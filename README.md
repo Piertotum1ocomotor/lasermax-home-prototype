@@ -1,2 +1,43 @@
-# lasermax-home-prototype
-Прототип новой главной страницы LaserMax для GitHub Pages
+# Прототип главной LaserMax
+
+Демонстрационная версия главной страницы сети студий лазерной эпиляции. Данные об услугах, ценах, скидке и филиалах взяты из открытых разделов [LaserMax](https://epilyaziya.ru/). На прототипе можно найти цену за сеанс, выбрать город, проверить адрес и перейти к форме обратного звонка на действующем сайте студии.
+
+Страница работает на HTML, CSS и JavaScript без сборки. Для локального просмотра из корня репозитория запустите `python3 -m http.server 8000`. GitHub Pages публикует содержимое корня ветки `main`.
+
+## Исследование
+
+### Действующий сайт
+
+На мобильной ширине главная показывала номер телефона, предложение первого визита и карточки городов. Часть акционных цен была внутри квиза. Карточка Рыбинска на главной вела в Череповец, хотя у Рыбинска есть отдельная рабочая страница. В прототипе телефон, город и ссылка на адреса вынесены в шапку, популярные цены доступны до заявки, а у Рыбинска исправлен маршрут. [Главная LaserMax](https://epilyaziya.ru/), [официальная страница Рыбинска](https://epilyaziya.ru/rybinsk/).
+
+В Рыбинске на сайте студии указаны ул. Чкалова, 64, ТЦ «Атриум», офис 113. Текущая карточка Яндекс Карт подтверждает улицу и дом. Официальные страницы Иванова и Рыбинска используют название LaserPro. [Контакты Рыбинска](https://epilyaziya.ru/rybinsk/contacts/), [карточка на Яндекс Картах](https://yandex.com/maps/org/lasermax/156426511893/), [городская страница Иванова](https://epilyaziya.ru/ivanovo/).
+
+### Опубликованные тесты
+
+| Источник | Что проверяли и что получилось | Что взяли для прототипа |
+| --- | --- | --- |
+| [Kaya Skin Clinic и VWO](https://vwo.com/success-stories/kaya-skin-clinic/) | За 45 дней сравнили контроль и два варианта. Для варианта с изменённым текстом над формой конверсия составила 9,5% против 4% в контроле. Размер выборки и разбивка по устройствам не приведены. | Кнопка описывает следующее действие, а рядом объяснено, что после заявки перезвонит администратор. |
+| [Сеть эстетических клиник и WRD](https://wrd.agency/results/case-studies/200-conversion-rate-uplift-for-a-multi-location-medical-aesthetics-clinic/) | Агентство сообщило +26,3% для закреплённой кнопки с формулировкой о консультации и +200,7% для переработанной формы. Тест кнопки остановили раньше срока, в форме меняли несколько элементов. | Связь со студией остаётся доступной в мобильном сценарии. |
+| [LaserAway и Intellimize](https://go.intellimize.com/rs/188-DSO-082/images/Laseraway_Case_Study.pdf) | Поставщик описывает программу с 2 600+ вариантами, в том числе с разным числом шагов и вариантами подсказок. Публикация даёт агрегированные результаты оптимизации. | Длину пути и формулировки стоит проверять отдельно по данным LaserMax. |
+
+### Кейсы и исследования пользователей
+
+- **SILK Laser Clinics.** Интервью, наблюдения, опросы и аналитика указали на трудности с поиском цены и выбором клиники. Поэтому цены и физические адреса вынесены в самостоятельные разделы. [Luminary](https://www.luminary.com/silk-laser-clinics).
+- **Dr.Laser.** В кейсе региональной сети описаны маршруты от города и зоны к цене и записи, а также 442 настраиваемых региональных ценника. В прототипе сохранены отдельные ссылки городов на адрес, официальный прайс и запись. [Smink](https://smink.ru/cases/drlaser/).
+- **«Подружки».** На региональных страницах сети есть входы в цены, адреса и запись. Для LaserMax эти маршруты помещены в компактную шапку. [Региональная главная «Подружек»](https://kemerovo.podruge.ru/).
+- **LaserMax и LaserPro.** Авторы действующего сайта описали исследование 25 сайтов, работу с возражениями, запуск рекламы и настройку аналитики. В опубликованном кейсе нет результатов контрольного эксперимента. Блок первого визита помогает ответить на вопросы, которые возникают до звонка. [INSPIRE Agency](https://inspire-agency.ru/kejs-laser-pro-i-lasermax/).
+
+### Как проверить гипотезу на LaserMax
+
+При доступе к данным сравнить открытые цены на главной и действующий путь через квиз, сохранив одинаковые цены, скидку и источники трафика. Основная метрика — подтверждённые записи на уникального посетителя. Дополнительно считать долю заявок с неверным городом, отмены и недозвоны. Размер выборки и срок определить до старта по исходной конверсии. Прототип не собирает эти данные и не измеряет прирост.
+
+## Изображения
+
+Редакционный портрет на первом экране создан встроенным ImageGen для этого прототипа. Фото кабинета взято из галереи на официальной странице студии в Иванове. [Контакты и галерея студии](https://epilyaziya.ru/ivanovo/contacts/).
+
+<details>
+<summary>Промпт портрета</summary>
+
+Use case: photorealistic-natural. Website hero editorial photograph for LaserMax, a Russian laser hair removal studio chain homepage. Single adult woman approx 29 with dark warm-brown hair in a relaxed low bun, natural warm skin texture, lightly smiling with eyes softly looking left of camera, in plain ivory wide-strap tank top, seated in sunlit sophisticated cream beauty studio. Medium close portrait from head through mid torso, forearm naturally resting across own upper body in a relaxed modest pose. Sophisticated premium skincare campaign, warm ivory walls, a subtle muted blush-lavender accent light and a gentle broad shadow from a window, muted warm grounds. Vertical 4:5 composition, subject centered a little to the right, breathing room above and around for cropping, but no blank text column. Large commercial softbox quality shot on 50mm lens, natural perspective, calming confident mood. Realistic, contemporary, accessible, elegant. No devices, no clinical claims, no logos, no text, no watermark, no retouching beyond natural color grade.
+
+</details>
